@@ -215,11 +215,14 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
             const SizedBox(
               height: 16,
             ),
-            Text(
-              recipe!.steps,
-              style: const TextStyle(
-                fontSize: 16,
-                color: Colors.black,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                recipe!.steps,
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
               ),
             ),
             const SizedBox(

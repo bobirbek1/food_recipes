@@ -9,21 +9,21 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     _startTimer(context);
-    return const Scaffold(
+    return  Scaffold(
       body: SizedBox(
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.fastfood,
-              size: 64,
-              color: Colors.black,
+            Image.asset(
+              "assets/icon.png",
+              width: 96,
+              height: 96,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            Text(
+            const Text(
               "Food recipes",
               style: TextStyle(
                 fontSize: 24,
